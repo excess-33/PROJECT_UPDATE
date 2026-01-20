@@ -53,7 +53,7 @@ fig1 = px.scatter_mapbox(
 )
 fig1.update_layout(height=700, coloraxis_colorbar=dict(title="Цена, $"))
 fig1.write_html("output/1_map_median_price.html")
-print("   ✓ Сохранено: output/1_map_median_price.html")
+print("   Сохранено: output/1_map_median_price.html")
 
 # ============== 2. ТОП-20 ПРИГОРОДОВ ПО МЕДИАННОЙ ЦЕНЕ ==============
 print("\n2. Топ-20 самых дорогих пригородов...")
@@ -79,7 +79,7 @@ fig2 = px.bar(
 fig2.update_traces(texttemplate='$%{text:,.0f}', textposition='outside')
 fig2.update_layout(height=600, showlegend=False, yaxis={'categoryorder': 'total ascending'})
 fig2.write_html("output/2_top20_suburbs.html")
-print("   ✓ Сохранено: output/2_top20_suburbs.html")
+print("   Сохранено: output/2_top20_suburbs.html")
 
 # ============== 3. РАСПРЕДЕЛЕНИЕ ЦЕН ПО ТИПАМ НЕДВИЖИМОСТИ ==============
 print("\n3. Распределение цен по типам...")
@@ -102,7 +102,7 @@ fig3.update_layout(
     showlegend=True
 )
 fig3.write_html("output/3_price_by_type.html")
-print("   ✓ Сохранено: output/3_price_by_type.html")
+print("   Сохранено: output/3_price_by_type.html")
 
 # ============== 4. ДИНАМИКА МЕДИАННЫХ ЦЕН ПО МЕСЯЦАМ ==============
 print("\n4. Динамика цен по месяцам...")
@@ -122,7 +122,7 @@ fig4 = px.line(
 fig4.update_xaxes(tickangle=45)
 fig4.update_layout(height=500)
 fig4.write_html("output/4_price_dynamics.html")
-print("   ✓ Сохранено: output/4_price_dynamics.html")
+print("   Сохранено: output/4_price_dynamics.html")
 
 # ============== 5. ЦЕНА ЗА М² ПО РЕГИОНАМ ==============
 print("\n5. Цена за м² по регионам...")
@@ -150,7 +150,7 @@ fig5.update_traces(texttemplate='$%{text:.0f}', textposition='outside')
 fig5.update_xaxes(tickangle=45)
 fig5.update_layout(height=600)
 fig5.write_html("output/5_price_per_m2_regions.html")
-print("   ✓ Сохранено: output/5_price_per_m2_regions.html")
+print("  Сохранено: output/5_price_per_m2_regions.html")
 
 # ============== 6. КОРРЕЛЯЦИОННАЯ МАТРИЦА ==============
 print("\n6. Корреляционная матрица...")
@@ -180,7 +180,7 @@ fig6.update_layout(
     yaxis={'side': 'left'}
 )
 fig6.write_html("output/6_correlation_matrix.html")
-print("   ✓ Сохранено: output/6_correlation_matrix.html")
+print("   Сохранено: output/6_correlation_matrix.html")
 
 # ============== 7. ЦЕНА VS РАССТОЯНИЕ ОТ ЦЕНТРА ==============
 print("\n7. Цена vs расстояние от центра...")
@@ -202,7 +202,7 @@ fig7 = px.scatter(
 )
 fig7.update_layout(height=600)
 fig7.write_html("output/7_price_vs_distance.html")
-print("   ✓ Сохранено: output/7_price_vs_distance.html")
+print("  Сохранено: output/7_price_vs_distance.html")
 
 # ============== 8. СРЕДНЯЯ ЦЕНА ПО КОЛИЧЕСТВУ КОМНАТ ==============
 print("\n8. Цена по количеству комнат...")
@@ -229,7 +229,7 @@ fig8 = px.bar(
 fig8.update_traces(texttemplate='$%{text:,.0f}', textposition='outside')
 fig8.update_layout(height=600)
 fig8.write_html("output/8_price_by_rooms.html")
-print("   ✓ Сохранено: output/8_price_by_rooms.html")
+print("  Сохранено: output/8_price_by_rooms.html")
 
 # ============== 9. КОЛИЧЕСТВО ПРОДАЖ ПО МЕТОДАМ ==============
 print("\n9. Методы продажи и их цены...")
@@ -268,7 +268,7 @@ fig9.add_trace(
 fig9.update_xaxes(tickangle=45)
 fig9.update_layout(height=500, showlegend=False, title_text="Анализ методов продажи")
 fig9.write_html("output/9_sales_methods.html")
-print("   ✓ Сохранено: output/9_sales_methods.html")
+print("  Сохранено: output/9_sales_methods.html")
 
 # ============== 10. ИНТЕРАКТИВНАЯ ТАБЛИЦА СВОДКИ ==============
 print("\n10. Интерактивная сводная таблица по регионам...")
@@ -306,7 +306,7 @@ fig10.update_layout(
     height=800
 )
 fig10.write_html("output/10_summary_table.html")
-print("   ✓ Сохранено: output/10_summary_table.html")
+print("  Сохранено: output/10_summary_table.html")
 
 print("\n" + "="*60)
 print("\nФайлы в папке 'output/':")
